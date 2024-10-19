@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRQ - SISTEM</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+
+    <header style="background-color: #3498db; color: white; padding: 20px; text-align: center;">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo de Empresa Ficticia" style="width: 80px;">
+        <h1>Empresa RRQ - SISTEM</h1>
+    </header>
+
+
+    <div class="container">
+        <h1>BIENVENIDOS A RRQ - SISTEM</h1>
+        <p>Somos líderes en ofrecer soluciones empresariales de calidad.</p>
+
+
+        <div class="services-section">
+            <div class="service-box">
+                <h2>Consultoría</h2>
+                <img src="{{ url_for('static', filename='images/im1.jpg') }}" alt="Consultoría" class="service-img" style="width: 450px;">
+                <p>Brindamos consultoría especializada para optimizar tu negocio.</p>
+                <button>Leer más</button>
+            </div>
+            
+            <div class="service-box">
+                <h2>Desarrollo Web</h2>
+                <img src="{{ url_for('static', filename='images/im2.jpg') }}" alt="Desarrollo Web" class="service-img" style="width: 450px;">
+                <p>Desarrollo web a medida para proyectos innovadores.</p>
+                <button>Leer más</button>
+            </div>
+        </div>
+
+        <p>¡Bienvenido, {{ username }}!</p>
+        <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+    </div>
+
+
+    <footer style="background-color: #34495e; color: white; padding: 10px; text-align: center;">
+        <p>&copy; 2024 Empresa RRQ SISTEM - Todos los derechos reservados - Ronal Huanca Quellca.</p>
+    </footer>
+    
+</body>
+</html>
